@@ -5,10 +5,10 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy the shell script into the container at /app
-COPY your_script.sh /app/
+COPY runslave.sh /app/
 
 # Make the script executable
-RUN chmod +x your_script.sh
+RUN chmod +x runslave.sh
 
 # Run the shell script when the container launches
 CMD ["./runslave.sh"]
